@@ -1,0 +1,54 @@
+* {
+    width: 1440;
+    
+}
+
+header {
+    position: relative;
+    background-color:black;
+    
+    
+}
+
+
+.logo {
+    position: relative;
+    padding-left: 140px;
+    padding-top: 83px;
+    
+}
+
+
+.nav {
+    color:white;
+    position: relative;
+    margin-left: 20%;
+    margin-bottom: 20%;
+   
+    
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+.nav > li {
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    color:white;
+    font-size: 22px;
+    
+}
+
+li {
+    padding-left: 97px;
+    position: relative;
+    margin-top: -3.8%;
+}
+
+li > a {
+    color: #fff !important;
+    text-decoration: none
+}
