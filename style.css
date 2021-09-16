@@ -57,7 +57,6 @@ a {
 
 .welcome > img {
 	
-	background-image: url("assets/img/visiting-2.png"); /*-это чо? ты задал бэкимг для имг???*/
 	position: absolute;
 	right: 0;
 	top: 10%;
@@ -168,7 +167,7 @@ border-radius: 10px;
   .visiting-container-images {
       position: relative;
       display: flex;
-      margin-left: 3%;
+      justify-content: center; /*Add this one to centeralize(for horizontal) content, now it always in center, no depended on width */
       background-color: #E5E5E5;
       flex-wrap: wrap;
       gap: 50px 150px; /*change it to 50 from 150 to place 3 in a row */
@@ -219,10 +218,10 @@ border-radius: 10px;
 .explore {
   position: relative;
   background-color: black;
-  height: 240px;
-  width: 100vw;/*I also told u not to use fixed values in width of block!*/
-  margin-top: 0; /*set zero*/
-  height:auto;
+  display:inline-block;
+ /* height: 240px;*/ /*why was it fixed, just unset*/
+  width: 100vw;/* Right!*/
+  padding-top: 6%;
 }
 
 
@@ -239,24 +238,24 @@ line-height: 38px;
 }
 
 
-.explore {
-  display: flex;
-  gap: 80px ;
-  padding-top: 6%;
-  
-}
+
 
 
 .text-explore {
-  padding-left: 2.9%;
+  padding-left: 3%;
   position: relative;
-  
+  float:left;
+  width:45%;
 }
 
 
 .image-explore {
-  padding-right:  12%;
-  padding-bottom: 4%;
+	position:relative;
+	display:block;
+float:left;
+width:45%;
+margin-left:3%
+
 }
 
 
@@ -267,22 +266,29 @@ line-height: 38px;
   font-size: 80px;
   line-height: 90px;
   /* identical to box height, or 112% */
-  
   letter-spacing: 5px;
   text-transform: uppercase;
-  margin-top: -1.4%;;
+  margin-top: 5%;
   color: #FFFFFF;
 }
 
 .text-explore p {
   position: relative;
   padding-top: 6.9%;
-  margin-bottom: -5.2%;
 }
 
  span {
    color: rgba(202, 170, 125, 1);
-
+}
+@media screen and (max-width: 1200px){ /*It's always used for adaptive*/
+	.text-explore {
+  padding-left: 0%;
+  width:100%;
+}
+.image-explore {
+width:100%;
+margin-left:0;
+}
 }
 
 
