@@ -1,99 +1,95 @@
-* {
-    width: 1440;
-    
+body{
+	margin:0;
+	padding:0;
+	overflow-x: hidden;
 }
 
-header {
-    position: relative;
-    background-color:black;
-    
-    
+header{
+	width:100%;
+	position:relative;
+	background-color:#000;
+	height:150px;
+	display:flex;
+	 align-items: center;
 }
-
 
 .logo {
-    position: relative;
-    padding-left: 140px;
-    padding-top: 83px;
-    
+position:relative;
+margin-left:10%;
+width:30%;
 }
 
 
 .nav {
     color:white;
     position: relative;
-    margin-left: 20%;
-    margin-bottom: 20%;
-    
-    
-    display: flex;
-    justify-content: center;
-    
-    
+	display:block;
+	margin:0;
+	margin-left:10%;
+	padding:0;
 }
 
 
 .nav > li {
+	float:left;
+	display:flex;
+	align-content: center;
     list-style-type: none;
+	margin-left:30px;
     font-family: 'Roboto', sans-serif;
-    position: relative;
-    color:white;
     font-size: 22px;
     
 }
 
-li {
-    padding-left: 97px;
-    position: relative;
-    margin-top: -3.8%;
-}
 
-li > a {
+a {
     color: #fff !important;
     text-decoration: none
 }
 
 
 .welcome {
-    position: relative;
-    background-color: #000000;
-    margin-top: -20%;
-   
-
+	position: relative;
+	background-color: black;
+	height:  100vh;
+	display: block; /*тут было флекс, нахуя? */
 }
 
 .welcome > img {
-    
-    position: relative;
-    margin-left: 35%;
-    
+	
+	background-image: url("assets/img/visiting-2.png"); /*-это чо? ты задал бэкимг для имг???*/
+	position: absolute;
+	right: 0;
+	top: 10%;
 }
+
 
 .text-welcome {
-    position: absolute;
-    margin-top: -35%;
-    
-    color: white;
-    margin-left: 6.5%;
+	display:block;
+	color: white;
+	top: 10%; /*тут было margin и произошло выпадание внешних отступов после задания релевантного display:block, почему можешь почитать в интернетах*/
+	position: relative;
+	margin-left: 12%;
+	
+	
 }
 
 
-
-.text-welcome h1 {
-    font-family: Forum;
+.text-welcome > h1 {
+	font-family: Forum;
 font-style: normal;
 font-weight: normal;
 font-size: 80px;
 line-height: 90px;
-/* identical to box height, or 112% */
 
+margin:0;
 letter-spacing: 5px;
 text-transform: uppercase;
 }
 
 
-.text-welcome  > p {
-    font-family: Roboto;
+.text-welcome p {
+	font-family: Roboto;
 font-style: normal;
 font-weight: 300;
 font-size: 28px;
@@ -105,9 +101,8 @@ letter-spacing: 2px;
 color: #FFFFFF;
 }
 
-
 .text-welcome > button {
-    font-family: Roboto;
+	font-family: Roboto;
 font-style: normal;
 font-weight: 200;
 font-size: 22px;
@@ -123,3 +118,171 @@ color: #FFFFFF;
 padding-left:78px;
 border-radius: 10px;
 }
+
+/*Are u serious? Why don't you just delete this block? It's my example, dude! I set zero height, so it doesn't matter*/
+
+
+.visiting { /*And when I setted 0 height for previous block, this go top on -10%, but it DO not have to */
+    position: relative;
+    background-color: #E5E5E5;
+    height: 240px;
+    width: 100vw;/*I also told u not to use fixed values in width of block!*/
+    margin-top: 0; /*set zero*/
+    height:auto;
+}
+
+.visiting > h1 {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    /* identical to box height, or 112% */
+    color:rgba(157, 134, 101, 1);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    position: relative;
+    padding-top: 5%;
+    padding-left: 5%;
+	border-bottom: 3px solid rgba(113, 7, 7, 1); /*like this, i think, but ur case is usable too*/
+	margin-top:0; /*set it because in another case it sees like shit, with white space between blocks, plz try to learn chrome devtools, it realy helps*/
+}
+
+
+/*.underline-title {
+    position: relative;
+  }
+  .underline-title::after {
+    content: "";
+    position: absolute;
+    margin-top: -2%;
+    left: 5%;
+    right: 0;
+    height: 3px;
+    background-color: rgba(113, 7, 7, 1)
+   
+    
+  } COME ON JUST USE THE BORDER!!!*/ 
+
+
+  .visiting-container-images {
+      position: relative;
+      display: flex;
+      margin-left: 3%;
+      background-color: #E5E5E5;
+      flex-wrap: wrap;
+      gap: 50px 150px; /*change it to 50 from 150 to place 3 in a row */
+      
+  }
+
+  .images {
+    background-color: #E5E5E5;
+  }
+
+
+  .images > h3 {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    background-color: #E5E5E5;
+    
+  
+  }
+
+
+  .images > p {
+      
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    
+  }
+
+
+.flex-line {
+    position: relative;
+    margin-top: 1%;
+}
+
+
+
+.explore {
+  position: relative;
+  background-color: black;
+  height: 240px;
+  width: 100vw;/*I also told u not to use fixed values in width of block!*/
+  margin-top: 0; /*set zero*/
+  height:auto;
+}
+
+
+.text-explore h1, p {
+ color: white;
+}
+
+.text-explore p {
+  font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 38px;
+}
+
+
+.explore {
+  display: flex;
+  gap: 80px ;
+  padding-top: 6%;
+  
+}
+
+
+.text-explore {
+  padding-left: 2.9%;
+  position: relative;
+  
+}
+
+
+.image-explore {
+  padding-right:  12%;
+  padding-bottom: 4%;
+}
+
+
+.text-explore > h1{
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  /* identical to box height, or 112% */
+  
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: -1.4%;;
+  color: #FFFFFF;
+}
+
+.text-explore p {
+  position: relative;
+  padding-top: 6.9%;
+  margin-bottom: -5.2%;
+}
+
+ span {
+   color: rgba(202, 170, 125, 1);
+
+}
+
+
