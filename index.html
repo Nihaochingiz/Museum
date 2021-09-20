@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
 
-    <title>Museum</title>
+    <title>MuseumVov</title>
 </head>
 <body>
     <header>
@@ -96,5 +96,44 @@
             </div>
             <img src="assets/img/explore.png" alt="explore" class="image-explore">
         </div>
+        <div class="videoJourney">
+            <video src="assets/video/video.mp4" poster="assets/video/poster.jpg" controls></video>
+            <div class="textBelowVideo">
+            <h1>Video journey</h1>
+            <p>Enter and visit one of the most famous museums in the world and enjoy </br>masterpieces such as Mona Lisa or Hammurabi's Code</p>
+        </div>
+            
+        </div>
+
+
+        <div class="buyTickets">
+            <h1>Buy Tickets</h1>
+            <img src="assets/img/image-buy-tickets.png" alt="image buy tickets">
+            
+            <div class="ticketType">
+               <h3>Ticket type</h3>
+                <p><label class="radio"><input type="radio" name="g" checked><span></span> Permanent exhibition</label>
+                    <label class="radio"><input type="radio" name="g"><span></span> Temporary exhibition</label>
+                    <label class="radio"><input type="radio" name="g"><span></span> Combined Admission</label></p>
+                  </body>
+                 </html>
+        </div>
+
+        <div class="amount">
+            <h3>Amount</h3>
+            <div class="basic">
+                <p>Basic 18+</p>
+                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+<input type="number" min="0" max="20" value="1" readonly class="number">
+<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+            </div>
+            <div class="senior">
+                <p>Senior 65+</p>
+                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+<input type="number" min="0" max="20" value="1" readonly class="number">
+<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

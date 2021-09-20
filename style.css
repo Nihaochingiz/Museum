@@ -289,6 +289,214 @@ margin-left:3%
 width:100%;
 margin-left:0;
 }
+.videoJourney {
+  width:100%;
+margin-left:0;
 }
 
+
+.textBelowVideo {
+  padding-left: 0%;
+  width:100%;
+}
+
+}
+
+
+.videoJourney {
+  position: relative;
+  
+  background-color: white;
+  
+  width: 100vw;/* Right!*/
+  padding:  0 3% 0 3%;
+  position:relative;
+	display:block;
+
+  
+  
+  
+}
+
+
+.videoJourney > video {
+  position: relative;
+  padding-right: 5%;
+  width: 93%;
+}
+
+
+.textBelowVideo {
+  display:flex;
+  gap: 5%;
+}
+
+
+.textBelowVideo  h1{
+  font-family: Forum;
+font-style: normal;
+font-weight: normal;
+font-size: 80px;
+
+text-transform: uppercase;
+
+color: #9D8665;
+position: relative;
+}
+
+
+
+.textBelowVideo p {
+  font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 38px;
+/* or 175% */
+color:#000;
+display: flex;
+align-items: center;
+}
+
+
+.buyTickets {
+  position: relative;
+	background-color: black;
+	height:  100vh;
+	display: block; 
+  padding-left: 3%;
+  padding-top: 1%;
+
+}
+
+
+
+.buyTickets h1 {
+  font-family: Forum;
+font-style: normal;
+font-weight: normal;
+font-size: 80px;
+line-height: 90px;
+/* identical to box height, or 112% */
+
+letter-spacing: 5px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+
+.buyTickets h3 {
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+
+.ticketType label{
+  font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 26px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+form {
+  position: relative;
+  padding-right: 20%;
+}
+
+
+
+.ticketType {
+  position: relative;
+  margin-left: 45%;
+  margin-top: -30%;
+  
+}
+
+.ticketType label {
+  display: flex;
+  padding-bottom: 61px;
+}
+
+
+.ticketType > h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+ 
+  
+  
+  color: #FFFFFF;
+  
+}
+
+.radio input { display: none; /* Прячем исходный переключатель */ }
+.radio span {
+ position: relative; /* Относительное позиционирование */
+ display: inline-block; /* Строчно-блочный элемент */ 
+ width: 17px; height: 17px; /* Размеры */
+ background: #F5F5F5; /* Серый цвет фона */
+ border-radius: 50%; /* Круглый переключатель */
+ box-shadow: inset 0 0 5px rgba(0,0,0,0.5); /* Тень внутри */
+ border: 2px solid #FFFFFF;
+
+}
+.radio input:checked + span { 
+ background: #030303; 
+}
+/* Добавляем белую точку по центру */
+.radio input:checked + span::before { 
+ content: '';
+ position: absolute;
+ left: 5px; top: 5px;
+ background: #fff;
+ width: 7px; height: 7px;
+ border-radius: 50%;
+}
+
+
+.ticketType span {
+  left: -30px;
+  
+}
+
+.amount  h3 {
+  position: relative;
+  padding-left:80%;
+  margin-top: -17.8%;
+  
+}
+
+
+.basic {
+  position: relative;
+  padding-left:80%;
+ 
+}
+
+.senior {
+  position: relative;
+  padding-left:80%;
+}
+
+.number {
+  all: unset;
+  width: 3em;
+  text-align: center;
+  color: white;
+}
 
