@@ -121,19 +121,72 @@
 
         <div class="amount">
             <h3>Amount</h3>
-            <div class="basic">
-                <p>Basic 18+</p>
-                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-<input type="number" min="0" max="20" value="1" readonly class="number">
-<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+            
+           
+                
+            <div class="basic"> 
+                
+                <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                <input type="number" min="0" value="1" readonly>
+                <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
             </div>
-            <div class="senior">
-                <p>Senior 65+</p>
-                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-<input type="number" min="0" max="20" value="1" readonly class="number">
-<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+        
+        
+        <div class="basic"><!--well, u already have class basic, why u did not use it? change from senior to basic -->
+            <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+            <input type="number" min="0" value="1" readonly>
+            <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+
+    </div>
+            <div class="total">
+                <h3>Total €
+                    220</h3>
+            </div>
+            <div class="buyNow">
+                <button><p>Buy now</p></button>
             </div>
         </div>
     </div>
+    <div class="contacts">
+        <h1>Contacts</h1>
+        <div class="textLeftOfTheMap">
+            <h3>Palais Royal <br>
+                Musee du Louvre</h3>
+                <ul class = "contactsLeftOfTheMap">
+                    <li>address:
+                        75001 Paris, France</li>
+                    <li>phone:
+                        +33(0) 1 40 20 50 50</li>
+                    <li>mail:
+                        info@louvre.fr</li>
+                    
+                   
+                </ul>
+               
+        </div>
+        <img src="assets/img/map.png" class = "map" alt="map to Louvre">
+        
+    </div>
+    <div class="footer">
+        <img src="assets/svg/logo.svg" alt="logo" class="logo-footer">
+        <ul class="nav-footer">
+            <li><a href="#visiting">Welcome</a></li>
+            <li><a href="#visiting">Visiting</a></li>
+           <li><a href="#explore">Explore</a></li>
+            <li><a href="#video">Video</a></li>
+           <li><a href="#tickets">Tickets</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+        <div class="social">
+            <a href="#"><img src="assets/svg/youtube.svg" alt="youtube"></a>
+            <a href="#"><img src="assets/svg/instagram.svg" alt="instagram"></a>
+            <a href="#"><img src="assets/svg/facebook.svg" alt="facebook"></a>
+                <a href="#"><img src="assets/svg/twitter.svg" alt="twitter"></a>
+               <a href="#"><img src="assets/svg/pinterest.svg" alt="pinterest"></a>
+        </div>
+    </div>
+
+
+    
 </body>
 </html>

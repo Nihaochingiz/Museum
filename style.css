@@ -110,7 +110,7 @@ display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 2px;
-background-color: #710707;
+background: #710707;
 width: 360px;
 height: 75px;
 color: #FFFFFF;
@@ -270,6 +270,7 @@ margin-left:3%
   text-transform: uppercase;
   margin-top: 5%;
   color: #FFFFFF;
+  border-bottom: 3px solid #710707;
 }
 
 .text-explore p {
@@ -300,6 +301,17 @@ margin-left:0;
   width:100%;
 }
 
+.buyTickets {
+  margin-left: 0%;
+  width:100%;
+}
+
+
+.amount {
+  padding-left: 0%;
+  width:100%;
+  
+}
 }
 
 
@@ -309,7 +321,7 @@ margin-left:0;
   background-color: white;
   
   width: 100vw;/* Right!*/
-  padding:  0 3% 0 3%;
+  /*padding:  0 3% 0 3%;*/ /*FOR WHAT??if u do smthng u must explain for what in your head*/
   position:relative;
 	display:block;
 
@@ -321,14 +333,16 @@ margin-left:0;
 
 .videoJourney > video {
   position: relative;
-  padding-right: 5%;
-  width: 93%;
+  margin-left: 5%;/*change ????padding right???? to margin-left, read about padding and margin again*/
+  margin-top:5%;
+  width: 90%; /*change 93 to 90*/
 }
 
 
 .textBelowVideo {
   display:flex;
   gap: 5%;
+  justify-content:center; /*use it or margin-left for h1 to move text to the right or to the center*/
 }
 
 
@@ -364,8 +378,8 @@ align-items: center;
 	background-color: black;
 	height:  100vh;
 	display: block; 
-  padding-left: 3%;
-  padding-top: 1%;
+ /*delete it padding-left: 3%;
+  padding-top: 1%;*/
 
 }
 
@@ -378,10 +392,11 @@ font-weight: normal;
 font-size: 80px;
 line-height: 90px;
 /* identical to box height, or 112% */
-
+padding-top:3%;
+margin-left:5%; 
 letter-spacing: 5px;
 text-transform: uppercase;
-
+border-bottom: 3px solid #710707;
 color: #FFFFFF;
 }
 
@@ -396,6 +411,12 @@ line-height: 33px;
 
 
 color: #FFFFFF;
+}
+
+
+.buyTickets img {
+  position: relative;
+  margin-left:5%; 
 }
 
 
@@ -420,7 +441,7 @@ form {
 
 .ticketType {
   position: relative;
-  margin-left: 45%;
+  margin-left: 48%;
   margin-top: -30%;
   
 }
@@ -477,26 +498,237 @@ form {
 .amount  h3 {
   position: relative;
   padding-left:80%;
-  margin-top: -17.8%;
+  margin-top: -15.8%;
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+  
+}
+.basic {
+	position: relative;
+	width: 100px;
+	margin-left:80%;
+	margin-top:2%;
+  /*margin-left: 50%;
+  margin-top: 20%;*/
+  border: 3px solid white; 
+}
+
+.basic input[type="number"] {
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	width: 100%;
+	padding: 0;
+    color:var(--main-color);
+	margin: 0;
+	box-sizing: border-box;
+	text-align: center;
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+    background-color: var(--bg-color);
+	border:none; /*u also can use it to delete shadow from input*/
+    color: white;
+}
+.basic input[type="number"]::-webkit-outer-spin-button,
+.basic input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+.number-minus {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	bottom: 1px;
+	width: 20px;
+	padding: 0;
+	display: block;
+	text-align: center;
+	border: none;
+	border-right: 1px solid #ddd;
+	font-size: 16px;
+  color: white;
+    background-color: var(--bg-color);
+	border: none; /*u could remove border this way*/
+    
+	font-weight: 600;
+}
+.number-plus {
+	position: absolute;
+	top: 1px;
+	border: none; /*u could remove border this way*/
+	right: 1px;
+	bottom: 1px;
+	width: 20px;
+	padding: 0;
+	display: block;
+	text-align: center;
+	/*border-left: 1px solid #ddd;*/ /*why did u set it if u need it without any border?*/
+	font-size: 16px;
+	font-weight: 600;
+    color: white;
+    background-color: var(--bg-color);
+}
+
+
+
+
+
+
+
+.total > h3 {
+  position: relative;
+  padding-left:80%;
+  margin-top: 5.8%;
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+
+.buyNow > button {
+border-radius: 2px;
+position: relative;
+color: #000000;
+background-color: #fff;
+/* identical to box height */
+height: 50px;
+width: 175px;
+border-radius: 0px;
+margin-left: 78.7%
+
+
+}
+
+.buyNow p {
+  font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 26px;
+margin:3px;
+color: #000000;
+}
+
+
+
+.contacts {
+  background-color: #E5E5E5;
+  position: relative;
+  
+  height: 240px;
+  width: 100vw;/*I also told u not to use fixed values in width of block!*/
+  
+  height:auto;
   
 }
 
 
-.basic {
+.contacts > h1 {
+  font-family: Forum;
+font-style: normal;
+font-weight: normal;
+font-size: 80px;
+line-height: 90px;
+/* identical to box height, or 112% */
+
+letter-spacing: 5px;
+text-transform: uppercase;
+
+color: #9D8665;
+position: relative;
+padding-top: 2%;
+margin-top: 0;
+margin-left:5%;
+border-bottom: 3px solid rgba(113, 7, 7, 1);
+}
+
+
+
+.map {
   position: relative;
-  padding-left:80%;
+  padding-left: 38%;
+  margin-top: -15%;
+  padding-bottom: 5%;
+  
+  
+}
+
+.textLeftOfTheMap h3 {
+  position: relative;
+  margin-top: 2%;
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+/* identical to box height */
+
+
+color: #000000;
+
+margin-left:5%;
+}
+
+.contactsLeftOfTheMap > li {
+  list-style-type: none;
+  font-family: Roboto;
+  font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 26px;
+/* identical to box height */
+
+color: #000000;
+padding-bottom: 32px;
+margin-left: 3%;
+
+
+}
+
+.footer {
+  background-color: black;
+}
+
+
+
+.logo-footer {
+  position: relative;
+  padding-left: 5.7%;
+  padding-top: 5%;
+}
+
+.nav-footer {
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
  
 }
 
-.senior {
-  position: relative;
-  padding-left:80%;
-}
 
-.number {
-  all: unset;
-  width: 3em;
-  text-align: center;
-  color: white;
-}
+.nav-footer > li {
+  font-family: Roboto;
+font-style: normal;
+font-weight: 200;
+font-size: 22px;
+line-height: 50px;
+letter-spacing: 2px;
+list-style-type: none;
+color: #FFFFFF;
+position: relative;
+padding-left: 30%;
 
+
+}
