@@ -711,10 +711,12 @@ margin-left: 3%;
 }
 
 .nav-footer {
-  flex-direction: column;
-  flex-wrap: wrap;
-  display: flex;
- 
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  grid-auto-rows: minmax(50px, auto);
+  padding-left: 30%;
+  margin-top: -2%;
 }
 
 
@@ -731,4 +733,26 @@ position: relative;
 padding-left: 30%;
 
 
+
 }
+
+.social {
+  position: relative;
+  display: flex;
+  margin-left: 70%;
+  padding-bottom: 84px;
+ 
+ 
+ 
+  
+  
+}
+
+
+.social > a {
+  position: relative;
+  padding-left: 48px;
+  margin-top: -11.6%; 
+  
+}
+
