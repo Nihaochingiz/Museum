@@ -252,7 +252,7 @@ line-height: 38px;
 .image-explore {
 	position:relative;
 	display:block;
-float:left;
+  float:left;
 width:45%;
 margin-left:3%
 
@@ -281,38 +281,17 @@ margin-left:3%
  span {
    color: rgba(202, 170, 125, 1);
 }
-@media screen and (max-width: 1200px){ /*It's always used for adaptive*/
-	.text-explore {
-  padding-left: 0%;
-  width:100%;
-}
-.image-explore {
-width:100%;
-margin-left:0;
-}
-.videoJourney {
-  width:100%;
-margin-left:0;
-}
 
 
-.textBelowVideo {
-  padding-left: 0%;
-  width:100%;
-}
 
-.buyTickets {
-  margin-left: 0%;
-  width:100%;
-}
 
 
 .amount {
-  padding-left: 0%;
-  width:100%;
-  
+  position: relative;
+  float: left;
+  margin-left: 10%;
 }
-}
+
 
 
 .videoJourney {
@@ -376,11 +355,18 @@ align-items: center;
 .buyTickets {
   position: relative;
 	background-color: black;
-	height:  100vh;
-	display: block; 
+	width: 100vw;
+	display: inline-block; 
  /*delete it padding-left: 3%;
   padding-top: 1%;*/
 
+}
+.buyTickets img {
+  position: relative;
+  float: left;
+  width: 40%;
+  margin-left: 10%;
+  padding-bottom: 60px;
 }
 
 
@@ -414,10 +400,7 @@ color: #FFFFFF;
 }
 
 
-.buyTickets img {
-  position: relative;
-  margin-left:5%; 
-}
+
 
 
 .ticketType label{
@@ -441,8 +424,8 @@ form {
 
 .ticketType {
   position: relative;
-  margin-left: 48%;
-  margin-top: -30%;
+  float: left;
+  margin-left: 7%;
   
 }
 
@@ -497,14 +480,12 @@ form {
 
 .amount  h3 {
   position: relative;
-  padding-left:80%;
-  margin-top: -15.8%;
+ 
   font-family: Roboto;
 font-style: normal;
 font-weight: bold;
 font-size: 28px;
 line-height: 33px;
-/* identical to box height */
 
 
 color: #FFFFFF;
@@ -513,8 +494,6 @@ color: #FFFFFF;
 .basic {
 	position: relative;
 	width: 100px;
-	margin-left:80%;
-	margin-top:2%;
   /*margin-left: 50%;
   margin-top: 20%;*/
   border: 3px solid white; 
@@ -584,7 +563,6 @@ color: #FFFFFF;
 
 .total > h3 {
   position: relative;
-  padding-left:80%;
   margin-top: 5.8%;
   font-family: Roboto;
 font-style: normal;
@@ -592,8 +570,8 @@ font-weight: bold;
 font-size: 28px;
 line-height: 33px;
 /* identical to box height */
-
-
+margin-bottom: 0; 
+margin-top: 70px;
 color: #FFFFFF;
 }
 
@@ -607,7 +585,8 @@ background-color: #fff;
 height: 50px;
 width: 175px;
 border-radius: 0px;
-margin-left: 78.7%
+margin-top: 70px;
+
 
 
 }
@@ -700,23 +679,29 @@ margin-left: 3%;
 
 .footer {
   background-color: black;
+  position:relative;
+  height:300px;
 }
 
 
 
 .logo-footer {
   position: relative;
-  padding-left: 5.7%;
-  padding-top: 5%;
+  float:left;
+  margin-left:5%;
+  margin-top:5%;
 }
 
 .nav-footer {
   position: relative;
+  float:left;
   display: grid;
-  grid-template-columns: repeat(2, 400px);
+  grid-template-columns: repeat(2, 200px);
   grid-auto-rows: minmax(50px, auto);
-  padding-left: 30%;
-  margin-top: -2%;
+  margin-left:5%;
+  margin-top:3%;
+ /* padding-left: 30%;
+  margin-top: -2%; Fuck u*/
 }
 
 
@@ -738,9 +723,11 @@ padding-left: 30%;
 
 .social {
   position: relative;
-  display: flex;
-  margin-left: 70%;
-  padding-bottom: 84px;
+  float:left;
+  margin-top:5%;
+  /*display: flex;*/
+  /*margin-left: 70%; I've tired to told u TO USE FLOAT!!!!!! it is position relative! And u tried to work with it like with absolute, PLEASE  DO not*/
+  /*padding-bottom: 84px; WTF???*/
  
  
  
@@ -756,3 +743,44 @@ padding-left: 30%;
   
 }
 
+
+@media screen and (max-width: 1200px){ /*It's always used for adaptive*/
+	.text-explore {
+  padding-left: 0%;
+  width:100%;
+}
+.image-explore {
+width:100%;
+margin-left:0;
+}
+.videoJourney {
+  width:100%;
+margin-left:0;
+}
+
+
+.textBelowVideo {
+  padding-left: 0%;
+  width:100%;
+}
+
+.buyTickets {
+  margin-left: 0%;
+  width:100vh;
+  display: inline-block;
+
+}
+
+.buyTickets img {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.buyNow > button {
+  margin-bottom: 70px;
+}
+
+.ticketType {
+  margin-left: 20%;
+}
+}
