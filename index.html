@@ -113,9 +113,9 @@
             
             <div class="ticketType">
                <h3>Ticket type</h3>
-                <p><label class="radio"><input type="radio" name="g" checked><span></span> Permanent exhibition</label>
-                    <label class="radio"><input type="radio" name="g"><span></span> Temporary exhibition</label>
-                    <label class="radio"><input type="radio" name="g"><span></span> Combined Admission</label></p>
+                <p><label class="radio"><input type="radio" name="g"  value = '0' ><span></span> Permanent exhibition</label>
+                    <label class="radio"><input type="radio" name="g" value = '1' ><span></span> Temporary exhibition</label>
+                    <label class="radio"><input type="radio" name="g" value = '2' ><span></span> Combined Admission</label></p>
                   </body>
                  </html>
         </div>
@@ -127,9 +127,9 @@
             <p>Basic 18+</p>
             <div class="basic"> 
                 
-                <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
-                <input type="number" min="0" value="1" readonly>
-                <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                <button class="number-minus" type=button onclick="counter(this,1)" >-</button>
+                <input type="number" min="0" value="0"  id = "input" readonly>
+                <button class="number-plus" type="button" onclick="counter(this,1)" >+</button>
             </div>
         
             
@@ -137,17 +137,17 @@
             <p>Senior 65+</p>
         <div class="basic"><!--well, u already have class basic, why u did not use it? change from senior to basic -->
             
-            <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
-            <input type="number" min="0" value="1" readonly>
-            <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+            <button class="number-minus" type="button"   onclick="counter(this,2)" >-</button>
+            <input type="number" min="0" value="0"  id = "input2" readonly>
+            <button class="number-plus" type="button" onclick="counter(this,2)">+</button>
 
     </div>
-            <div class="total">
-                <h3>Total € 220</h3>
+            <div class="total" >
+                <h3 id="total" >Total 0</h3>
                     
             </div>
             <div class="buyNow">
-                <button><p>Buy now</p></button>
+                <button id=button ><p>Buy now</p></button>
             </div>
         </div>
     </div>
@@ -191,6 +191,7 @@
     </div>
 
 
-    
+    <script src="script.js"></script>
 </body>
+
 </html>
