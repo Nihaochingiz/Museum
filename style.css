@@ -52,7 +52,7 @@ a {
 	position: relative;
 	background-color: black;
 	height:  100vh;
-	display: block; /*тут было флекс, нахуя? */
+	display: block; 
 }
 
 .welcome > img {
@@ -66,7 +66,7 @@ a {
 .text-welcome {
 	display:block;
 	color: white;
-	top: 10%; /*тут было margin и произошло выпадание внешних отступов после задания релевантного display:block, почему можешь почитать в интернетах*/
+	top: 10%; 
 	position: relative;
 	margin-left: 12%;
 	
@@ -118,15 +118,15 @@ padding-left:78px;
 border-radius: 10px;
 }
 
-/*Are u serious? Why don't you just delete this block? It's my example, dude! I set zero height, so it doesn't matter*/
 
 
-.visiting { /*And when I setted 0 height for previous block, this go top on -10%, but it DO not have to */
+
+.visiting { 
     position: relative;
     background-color: #E5E5E5;
     height: 240px;
-    width: 100vw;/*I also told u not to use fixed values in width of block!*/
-    margin-top: 0; /*set zero*/
+    width: 100vw;
+    margin-top: 0; 
     height:auto;
 }
 
@@ -144,7 +144,7 @@ border-radius: 10px;
     padding-top: 5%;
     padding-left: 5%;
 	border-bottom: 3px solid rgba(113, 7, 7, 1); /*like this, i think, but ur case is usable too*/
-	margin-top:0; /*set it because in another case it sees like shit, with white space between blocks, plz try to learn chrome devtools, it realy helps*/
+	margin-top:0; 
 }
 
 
@@ -161,16 +161,16 @@ border-radius: 10px;
     background-color: rgba(113, 7, 7, 1)
    
     
-  } COME ON JUST USE THE BORDER!!!*/ 
+  } 
 
 
   .visiting-container-images {
       position: relative;
       display: flex;
-      justify-content: center; /*Add this one to centeralize(for horizontal) content, now it always in center, no depended on width */
+      justify-content: center; 
       background-color: #E5E5E5;
       flex-wrap: wrap;
-      gap: 50px 150px; /*change it to 50 from 150 to place 3 in a row */
+      gap: 50px 150px; 
       
   }
 
@@ -219,8 +219,8 @@ border-radius: 10px;
   position: relative;
   background-color: black;
   display:inline-block;
- /* height: 240px;*/ /*why was it fixed, just unset*/
-  width: 100vw;/* Right!*/
+ /* height: 240px;*
+  width: 100vw;
   padding-top: 6%;
 }
 
@@ -265,7 +265,7 @@ margin-left:3%
   font-weight: normal;
   font-size: 80px;
   line-height: 90px;
-  /* identical to box height, or 112% */
+ 
   letter-spacing: 5px;
   text-transform: uppercase;
   margin-top: 5%;
@@ -311,8 +311,8 @@ color: #FFFFFF;
   
   background-color: white;
   
-  width: 100vw;/* Right!*/
-  /*padding:  0 3% 0 3%;*/ /*FOR WHAT??if u do smthng u must explain for what in your head*/
+  width: 100vw;
+  
   position:relative;
 	display:block;
 
@@ -324,16 +324,16 @@ color: #FFFFFF;
 
 .videoJourney > video {
   position: relative;
-  margin-left: 5%;/*change ????padding right???? to margin-left, read about padding and margin again*/
+  margin-left: 5%;
   margin-top:5%;
-  width: 90%; /*change 93 to 90*/
+  width: 90%; 
 }
 
 
 .textBelowVideo {
   display:flex;
   gap: 5%;
-  justify-content:center; /*use it or margin-left for h1 to move text to the right or to the center*/
+  justify-content:center; 
 }
 
 
@@ -524,7 +524,7 @@ color: #FFFFFF;
 	-webkit-appearance: textfield;
 	appearance: textfield;
     background-color: var(--bg-color);
-	border:none; /*u also can use it to delete shadow from input*/
+	border:none; 
     color: white;
 }
 .basic input[type="number"]::-webkit-outer-spin-button,
@@ -619,7 +619,7 @@ color: #000000;
   position: relative;
   display: inline-block;
   
-  width: 100vw;/*I also told u not to use fixed values in width of block!*/
+  width: 100vw;
   
   
 }
@@ -740,9 +740,6 @@ padding-left: 30%;
   position: relative;
   float:left;
   margin-top:5%;
-  /*display: flex;*/
-  /*margin-left: 70%; I've tired to told u TO USE FLOAT!!!!!! it is position relative! And u tried to work with it like with absolute, PLEASE  DO not*/
-  /*padding-bottom: 84px; WTF???*/
   margin-left: 20%;
  
  
