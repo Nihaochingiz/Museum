@@ -1,13 +1,14 @@
 body{
 	margin:0;
 	padding:0;
-	overflow-x: hidden;
+  overflow-x: hidden
 }
 
 header{
-	width:100%;
+
 	position:relative;
 	background-color:#000;
+  
 	height:150px;
 	display:flex;
 	 align-items: center;
@@ -52,7 +53,7 @@ a {
 	position: relative;
 	background-color: black;
 	height:  100vh;
-	display: block; 
+	display: block; /*тут было флекс, нахуя? */
 }
 
 .welcome > img {
@@ -66,12 +67,84 @@ a {
 .text-welcome {
 	display:block;
 	color: white;
-	top: 10%; 
+	top: 10%; /*тут было margin и произошло выпадание внешних отступов после задания релевантного display:block, почему можешь почитать в интернетах*/
 	position: relative;
 	margin-left: 12%;
 	
 	
 }
+.basic {
+	position: relative;
+	width: 100px;
+  
+  border: 3px solid white;
+}
+
+
+.amount-text {
+  margin-left: 80%;
+}
+
+.basic input[type="number"] {
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	width: 100%;
+	padding: 0;
+    color:var(--main-color);
+	margin: 0;
+	box-sizing: border-box;
+	text-align: center;
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+    background-color: var(--bg-color);
+	border:none; /*u also can use it to delete shadow from input*/
+    color: white;
+}
+.basic input[type="number"]::-webkit-outer-spin-button,
+.basic input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+.number-minus {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	bottom: 1px;
+	width: 20px;
+	padding: 0;
+	display: block;
+	text-align: center;
+	border: none;
+	border-right: 1px solid #ddd;
+	font-size: 16px;
+  color: white;
+    background-color: var(--bg-color);
+	border: none; /*u could remove border this way*/
+
+	font-weight: 600;
+}
+.number-plus {
+	position: absolute;
+	top: 1px;
+	border: none; /*u could remove border this way*/
+	right: 1px;
+	bottom: 1px;
+	width: 20px;
+	padding: 0;
+	display: block;
+	text-align: center;
+	/*border-left: 1px solid #ddd;*/ /*why did u set it if u need it without any border?*/
+	font-size: 16px;
+	font-weight: 600;
+    color: white;
+    background-color: var(--bg-color);
+}
+
+
+
+
+
 
 
 .text-welcome > h1 {
@@ -118,15 +191,15 @@ padding-left:78px;
 border-radius: 10px;
 }
 
+/*Are u serious? Why don't you just delete this block? It's my example, dude! I set zero height, so it doesn't matter*/
 
 
-
-.visiting { 
+.visiting { /*And when I setted 0 height for previous block, this go top on -10%, but it DO not have to */
     position: relative;
     background-color: #E5E5E5;
     height: 240px;
-    width: 100vw;
-    margin-top: 0; 
+    width: 100vw;/*I also told u not to use fixed values in width of block!*/
+    margin-top: 0; /*set zero*/
     height:auto;
 }
 
@@ -144,7 +217,7 @@ border-radius: 10px;
     padding-top: 5%;
     padding-left: 5%;
 	border-bottom: 3px solid rgba(113, 7, 7, 1); /*like this, i think, but ur case is usable too*/
-	margin-top:0; 
+	margin-top:0; /*set it because in another case it sees like shit, with white space between blocks, plz try to learn chrome devtools, it realy helps*/
 }
 
 
@@ -161,16 +234,16 @@ border-radius: 10px;
     background-color: rgba(113, 7, 7, 1)
    
     
-  } 
+  } COME ON JUST USE THE BORDER!!!*/ 
 
 
   .visiting-container-images {
       position: relative;
       display: flex;
-      justify-content: center; 
+      justify-content: center; /*Add this one to centeralize(for horizontal) content, now it always in center, no depended on width */
       background-color: #E5E5E5;
       flex-wrap: wrap;
-      gap: 50px 150px; 
+      gap: 50px 150px; /*change it to 50 from 150 to place 3 in a row */
       
   }
 
@@ -219,8 +292,8 @@ border-radius: 10px;
   position: relative;
   background-color: black;
   display:inline-block;
- /* height: 240px;*
-  width: 100vw;
+ /* height: 240px;*/ /*why was it fixed, just unset*/
+  width: 100vw;/* Right!*/
   padding-top: 6%;
 }
 
@@ -252,7 +325,7 @@ line-height: 38px;
 .image-explore {
 	position:relative;
 	display:block;
-  float:left;
+float:left;
 width:45%;
 margin-left:3%
 
@@ -265,7 +338,7 @@ margin-left:3%
   font-weight: normal;
   font-size: 80px;
   line-height: 90px;
- 
+  /* identical to box height, or 112% */
   letter-spacing: 5px;
   text-transform: uppercase;
   margin-top: 5%;
@@ -281,29 +354,39 @@ margin-left:3%
  span {
    color: rgba(202, 170, 125, 1);
 }
+@media screen and (max-width: 1200px){ /*It's always used for adaptive*/
+	.text-explore {
+  padding-left: 0%;
+  width:100%;
+}
+.image-explore {
+width:100%;
+margin-left:0;
+}
+.videoJourney {
+  width:100%;
+margin-left:0;
+}
 
 
+.textBelowVideo {
+  padding-left: 0%;
+  width:100%;
+}
 
+.buyTickets {
+  margin-left: 0%;
+  width:100%;
+  
+}
 
 
 .amount {
-  position: relative;
-  float: left;
-  margin-left: 10%;
+  padding-left: 0%;
+  width:100%;
+  
 }
-
-.amount > p {
-  font-family: Roboto;
-font-style: normal;
-font-weight: 300;
-font-size: 22px;
-line-height: 26px;
-/* identical to box height */
-
-
-color: #FFFFFF;
 }
-
 
 
 .videoJourney {
@@ -311,8 +394,8 @@ color: #FFFFFF;
   
   background-color: white;
   
-  width: 100vw;
-  
+  width: 100vw;/* Right!*/
+  /*padding:  0 3% 0 3%;*/ /*FOR WHAT??if u do smthng u must explain for what in your head*/
   position:relative;
 	display:block;
 
@@ -324,16 +407,16 @@ color: #FFFFFF;
 
 .videoJourney > video {
   position: relative;
-  margin-left: 5%;
+  margin-left: 5%;/*change ????padding right???? to margin-left, read about padding and margin again*/
   margin-top:5%;
-  width: 90%; 
+  width: 90%; /*change 93 to 90*/
 }
 
 
 .textBelowVideo {
   display:flex;
   gap: 5%;
-  justify-content:center; 
+  justify-content:center; /*use it or margin-left for h1 to move text to the right or to the center*/
 }
 
 
@@ -367,17 +450,11 @@ align-items: center;
 .buyTickets {
   position: relative;
 	background-color: black;
-	width: 100vw;
-	display: inline-block; 
- 
+	height:  100vh;
+	display: block; 
+ /*delete it padding-left: 3%;
+  padding-top: 1%;*/
 
-}
-.buyTickets img {
-  position: relative;
-  float: left;
-  width: 40%;
-  margin-left: 10%;
-  padding-bottom: 60px;
 }
 
 
@@ -411,7 +488,11 @@ color: #FFFFFF;
 }
 
 
-
+.buyTickets > img {
+  position: relative;
+  margin-left:5%; 
+  
+}
 
 
 .ticketType label{
@@ -435,10 +516,12 @@ form {
 
 .ticketType {
   position: relative;
-  float: left;
-  margin-left: 7%;
+  margin-left: 48%;
+  margin-top: -30%;
   
 }
+
+
 
 .ticketType label {
   display: flex;
@@ -457,6 +540,18 @@ form {
   
   color: #FFFFFF;
   
+}
+
+
+@media screen and (max-width: 1200px) {
+  
+  .radio span {
+    position: relative;
+    margin-left: 18%;
+    margin-top: -10%;
+    width: 100%;
+    
+  }
 }
 
 .radio input { display: none; /* Прячем исходный переключатель */ }
@@ -491,12 +586,14 @@ form {
 
 .amount  h3 {
   position: relative;
- 
+  padding-left:80%;
+  margin-top: -15.8%;
   font-family: Roboto;
 font-style: normal;
 font-weight: bold;
 font-size: 28px;
 line-height: 33px;
+/* identical to box height */
 
 
 color: #FFFFFF;
@@ -505,6 +602,8 @@ color: #FFFFFF;
 .basic {
 	position: relative;
 	width: 100px;
+	margin-left:80%;
+	margin-top:2%;
   /*margin-left: 50%;
   margin-top: 20%;*/
   border: 3px solid white; 
@@ -524,7 +623,7 @@ color: #FFFFFF;
 	-webkit-appearance: textfield;
 	appearance: textfield;
     background-color: var(--bg-color);
-	border:none; 
+	border:none; /*u also can use it to delete shadow from input*/
     color: white;
 }
 .basic input[type="number"]::-webkit-outer-spin-button,
@@ -574,6 +673,7 @@ color: #FFFFFF;
 
 .total > h3 {
   position: relative;
+  padding-left:80%;
   margin-top: 5.8%;
   font-family: Roboto;
 font-style: normal;
@@ -581,8 +681,8 @@ font-weight: bold;
 font-size: 28px;
 line-height: 33px;
 /* identical to box height */
-margin-bottom: 0; 
-margin-top: 70px;
+
+
 color: #FFFFFF;
 }
 
@@ -596,8 +696,7 @@ background-color: #fff;
 height: 50px;
 width: 175px;
 border-radius: 0px;
-margin-top: 70px;
-
+margin-left: 78.7%
 
 
 }
@@ -617,10 +716,11 @@ color: #000000;
 .contacts {
   background-color: #E5E5E5;
   position: relative;
-  display: inline-block;
   
-  width: 100vw;
+  height: 240px;
+  width: 100vw;/*I also told u not to use fixed values in width of block!*/
   
+  height:auto;
   
 }
 
@@ -648,11 +748,9 @@ border-bottom: 3px solid rgba(113, 7, 7, 1);
 
 .map {
   position: relative;
-  width: 60%;
-  margin-left: 26%;
-  padding-bottom: 100px;
- 
-  
+  padding-left: 38%;
+  margin-top: -15%;
+  padding-bottom: 5%;
   
   
 }
@@ -691,32 +789,23 @@ margin-left: 3%;
 
 .footer {
   background-color: black;
-  position:relative;
-  height:100%;
-  width: 100vw;
-  display: inline-block;
 }
 
 
 
 .logo-footer {
   position: relative;
-  float:left;
-  margin-left:5%;
-  margin-top:5%;
+  padding-left: 5.7%;
+  padding-top: 5%;
 }
 
 .nav-footer {
   position: relative;
-  float:left;
   display: grid;
-  grid-template-columns: repeat(2, 200px);
+  grid-template-columns: repeat(2, 400px);
   grid-auto-rows: minmax(50px, auto);
-  margin-left:5%;
-  margin-top:3%;
-  padding-bottom: 40px;
- /* padding-left: 30%;
-  margin-top: -2%; Fuck u*/
+  padding-left: 30%;
+  margin-top: -2%;
 }
 
 
@@ -738,9 +827,9 @@ padding-left: 30%;
 
 .social {
   position: relative;
-  float:left;
-  margin-top:5%;
-  margin-left: 20%;
+  display: flex;
+  margin-left: 70%;
+  padding-bottom: 84px;
  
  
  
@@ -754,56 +843,4 @@ padding-left: 30%;
   padding-left: 48px;
   margin-top: -11.6%; 
   
-}
-
-
-@media screen and (max-width: 1200px){ /*It's always used for adaptive*/
-	.text-explore {
-  padding-left: 0%;
-  width:100%;
-}
-.image-explore {
-width:100%;
-margin-left:0;
-}
-.videoJourney {
-  width:100%;
-margin-left:0;
-}
-
-
-.textBelowVideo {
-  padding-left: 0%;
-  width:100%;
-}
-
-.buyTickets {
-  margin-left: 0%;
-  width:100vw;
-  display: inline-block;
-
-}
-
-.buyTickets img {
-  width: 90%;
-  margin-left: 5%;
-}
-
-.buyNow > button {
-  margin-bottom: 70px;
-}
-
-.ticketType {
-  margin-left: 20%;
-}
-
-.map {
-  
-  float: right;
-  width: 100%;
-  
-}
-
-
-
 }

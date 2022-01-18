@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconneact" href="https://fonts.gstatic.com" crossorigin>
@@ -11,11 +11,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
-<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
 
-    <title>Museum</title>   
+    <title>Museum</title>
 </head>
 <body>
+
     <header>
         <img src="assets/svg/logo.svg" alt="logo" class="logo">
         <ul class="nav">
@@ -27,6 +27,7 @@
            
         </ul>
     </header>
+    
     <div class="welcome">
        <img src="assets/img/background.png" alt="louvre">
         <div class="text-welcome">
@@ -37,7 +38,7 @@
         </div>
 		</div> 
 	
-		
+    
         <div class="visiting">
             <h1>Virtual tour</h1>
             <div class="underline-title"></div>
@@ -112,45 +113,45 @@
             <img src="assets/img/image-buy-tickets.png" alt="image buy tickets">
             
             <div class="ticketType">
-               <h3>Ticket type</h3>
-                <p><label class="radio"><input type="radio" name="g"  value = '0' ><span></span> Permanent exhibition</label>
-                    <label class="radio"><input type="radio" name="g" value = '1' ><span></span> Temporary exhibition</label>
-                    <label class="radio"><input type="radio" name="g" value = '2' ><span></span> Combined Admission</label></p>
-                  </body>
-                 </html>
-        </div>
-
-        <div class="amount">
-            <h3>Amount</h3>
+                <h3>Ticket type</h3>
+                 <p><label class="radio"><input type="radio" name="g"  value = '0' ><span></span> Permanent exhibition</label>
+                     <label class="radio"><input type="radio" name="g" value = '1' ><span></span> Temporary exhibition</label>
+                     <label class="radio"><input type="radio" name="g" value = '2' ><span></span> Combined Admission</label></p>
+                   </body>
+                  </html>
+         </div>
+ 
+         <div class="amount">
+             <h3>Amount</h3>
+             
             
-           
-            <p>Basic 18+</p>
-            <div class="basic"> 
-                
-                <button class="number-minus" type=button onclick="counter(this,1)" >-</button>
-                <input type="number" min="0" value="0"  id = "input" readonly>
-                <button class="number-plus" type="button" onclick="counter(this,1)" >+</button>
-            </div>
-        
-            
-
-            <p>Senior 65+</p>
-        <div class="basic"><!--well, u already have class basic, why u did not use it? change from senior to basic -->
-            
-            <button class="number-minus" type="button"   onclick="counter(this,2)" >-</button>
-            <input type="number" min="0" value="0"  id = "input2" readonly>
-            <button class="number-plus" type="button" onclick="counter(this,2)">+</button>
-
-    </div>
-            <div class="total" >
-                <h3 id="total" >Total 0</h3>
-                    
-            </div>
-            <div class="buyNow">
-                <button id=button ><p>Buy now</p></button>
-            </div>
-        </div>
-    </div>
+             <p class = "amount-text">Basic 18+</p>
+             <div class="basic"> 
+                 
+                 <button class="number-minus" type=button onclick="counter(this,1)" >-</button>
+                 <input type="number" min="0" value="0"  id = "input" readonly>
+                 <button class="number-plus" type="button" onclick="counter(this,1)" >+</button>
+             </div>
+         
+             
+ 
+             <p class = "amount-text" >Senior 65+</p>
+         <div class="basic"><!--well, u already have class basic, why u did not use it? change from senior to basic -->
+             
+             <button class="number-minus" type="button"   onclick="counter(this,2)" >-</button>
+             <input type="number" min="0" value="0"  id = "input2" readonly>
+             <button class="number-plus" type="button" onclick="counter(this,2)">+</button>
+ 
+     </div>
+             <div class="total" >
+                 <h3 id="total" >Total 0</h3>
+                     
+             </div>
+             <div class="buyNow">
+                 <button id=button ><p>Buy now</p></button>
+             </div>
+         </div>
+     </div>
     <div class="contacts">
         <h1>Contacts</h1>
         <div class="textLeftOfTheMap">
@@ -193,5 +194,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>
