@@ -194,6 +194,7 @@ border-radius: 10px;
 /*Are u serious? Why don't you just delete this block? It's my example, dude! I set zero height, so it doesn't matter*/
 
 
+
 .visiting { /*And when I setted 0 height for previous block, this go top on -10%, but it DO not have to */
     position: relative;
     background-color: #E5E5E5;
@@ -354,39 +355,7 @@ margin-left:3%
  span {
    color: rgba(202, 170, 125, 1);
 }
-@media screen and (max-width: 1200px){ /*It's always used for adaptive*/
-	.text-explore {
-  padding-left: 0%;
-  width:100%;
-}
-.image-explore {
-width:100%;
-margin-left:0;
-}
-.videoJourney {
-  width:100%;
-margin-left:0;
-}
 
-
-.textBelowVideo {
-  padding-left: 0%;
-  width:100%;
-}
-
-.buyTickets {
-  margin-left: 0%;
-  width:100%;
-  
-}
-
-
-.amount {
-  padding-left: 0%;
-  width:100%;
-  
-}
-}
 
 
 .videoJourney {
@@ -448,13 +417,16 @@ align-items: center;
 
 
 .buyTickets {
-  position: relative;
 	background-color: black;
-	height:  100vh;
-	display: block; 
- /*delete it padding-left: 3%;
-  padding-top: 1%;*/
+  width: 100vw;
+  height: auto;
+	
 
+
+}
+
+.ticketType {
+  margin-top: 50%;
 }
 
 
@@ -542,17 +514,6 @@ form {
   
 }
 
-
-@media screen and (max-width: 1200px) {
-  
-  .radio span {
-    position: relative;
-    margin-left: 18%;
-    margin-top: -10%;
-    width: 100%;
-    
-  }
-}
 
 .radio input { display: none; /* Прячем исходный переключатель */ }
 .radio span {
@@ -696,7 +657,7 @@ background-color: #fff;
 height: 50px;
 width: 175px;
 border-radius: 0px;
-margin-left: 78.7%
+margin-left: 78.7%;
 
 
 }
@@ -715,12 +676,10 @@ color: #000000;
 
 .contacts {
   background-color: #E5E5E5;
-  position: relative;
-  
-  height: 240px;
-  width: 100vw;/*I also told u not to use fixed values in width of block!*/
-  
+  position: relative; 
+  width: 100vw;
   height:auto;
+  margin-top: 10%;/*ЗАМЕТКА ПОТОМ УБРАТЬ*/
   
 }
 
@@ -843,4 +802,55 @@ padding-left: 30%;
   padding-left: 48px;
   margin-top: -11.6%; 
   
+}
+
+.text-explore > p {
+  padding-left: 5%;
+}
+
+
+
+@media screen and (max-width: 1200px){ /*It's always used for adaptive*/
+	.text-explore {
+  padding-left: 0%;
+  width:100%;
+}
+.image-explore {
+width:100%;
+margin-left:0;
+}
+.videoJourney {
+  width:100%;
+margin-left:0;
+}
+
+
+.textBelowVideo {
+  padding-left: 0%;
+  width:100%;
+}
+
+
+
+.amount {
+  padding-left: 0%;
+  width:100%;
+  
+}
+.radio span {
+  position: relative;
+  margin-left: 18%;
+  margin-top: -10%;
+  width: 100%;
+  
+}
+
+.buyTickets > img {
+  width: 50vw;
+  height: auto;
+}
+.ticketType {
+  float:left;
+  margin-top: 5%;
+}
 }
