@@ -80,7 +80,11 @@ a {
   border: 3px solid white;
 }
 
-
+.amount {
+  width: 100vw;
+  height: 100vh;
+  
+}
 .amount-text {
   margin-left: 80%;
 }
@@ -679,7 +683,7 @@ color: #000000;
   position: relative; 
   width: 100vw;
   height:auto;
-  margin-top: 10%;/*ЗАМЕТКА ПОТОМ УБРАТЬ*/
+  
   
 }
 
@@ -785,15 +789,8 @@ padding-left: 30%;
 }
 
 .social {
-  position: relative;
-  display: flex;
+  overflow: hidden;
   margin-left: 70%;
-  padding-bottom: 84px;
- 
- 
- 
-  
-  
 }
 
 
@@ -810,7 +807,7 @@ padding-left: 30%;
 
 
 
-@media screen and (max-width: 1200px){ /*It's always used for adaptive*/
+@media screen and (max-width: 1280px){ /*It's always used for adaptive*/
 	.text-explore {
   padding-left: 0%;
   width:100%;
@@ -833,9 +830,21 @@ margin-left:0;
 
 
 .amount {
-  padding-left: 0%;
-  width:100%;
+ float: left;
+}
+.ticketType {
+ margin-left: 10px;
+  margin-top: 10%;
+}
+
+.buyTickets {
   
+  width: 100vw;
+  height: 300vh;
+}
+
+.buyTickets > h1 {
+  margin-left: 20%;
 }
 .radio span {
   position: relative;
@@ -846,11 +855,42 @@ margin-left:0;
 }
 
 .buyTickets > img {
+ margin-left: 20%;
   width: 50vw;
   height: auto;
 }
-.ticketType {
-  float:left;
-  margin-top: 5%;
+
+
+.ticketType > h3 {
+  margin-left: 20%;
+}
+
+.ticketType-radio {
+  float: left;
+  margin-left: 20%;
+}
+.radio span {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+
+.map {
+max-width: 500px;
+height: auto;
+ 
+}
+
+
+.footer {
+  width: 100%;
+  height: auto;
+}
+.social {
+margin-left: 2%;
+margin-top: 15%;
 }
 }
+
+
